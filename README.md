@@ -2,9 +2,10 @@
 
 ```python
 class RussellSet:
-    def contains(self, target):
+    """A set that contains all sets that do not contain themselves."""
+    def __contains__(self, target):
         if target is self:
-            raise ValueError("Russell's Paradox: Logical contradiction.")
+            return not (self in self)
         return False
 
 # if self == True, run_program()
