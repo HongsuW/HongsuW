@@ -17,7 +17,7 @@ def run_program_life():
 
 try:
     if my_self == True:
-        my_self = self
+        my_self = my_self
     else:
         my_self = "unknown"
 except NameError:
